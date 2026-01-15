@@ -1,0 +1,423 @@
+ ---
+title: "Mineração de Dados: Tarefas e Aplicações"
+subtitle: "<br><br>"
+title-slide-attributes:
+    data-background-size: contain
+    data-background-position-x: center
+    data-background-position-y: center
+---
+
+## **Conteúdo do Minicurso**  
+
+::::{.columns style='display: flex !important; height: 70%; align-items: center;'}
+
+::: {.column width="20%"}
+![](figuras/professor1-1.png){fig-alt="Professor1-1" fig-align="center"}
+:::
+
+::: {.column width="80%"}
+::: {.nonincremental}
+::: {style="font-size: 120%;"}
+- Surgimento da Mineração de Dados
+- Definição de Mineração de Dados
+- Tarefas e Técnicas de Mineração de Dados
+- Aplicações
+- Softwares
+:::
+:::
+:::
+
+::::
+
+
+# **Contextualização** {background-color="#0efb45ce" style="text-align: center;"}
+
+## **Surgimento da Mineração de Dados**
+::: {style="line-height: 2.0;"}
+::: {.nonincremental}
+A [disseminação]{.alert} do uso de [meios eletrônicos]{.alert} na sociedade moderna tem gerado uma [enorme quantidade de dados]{.alert}.
+
+- [Uso de SGBDs]{.alert} na maioria das organizações públicas e privadas de médio e grande porte.
+- Avanços na [aquisição de dados]{.alert}, desde os leitores de códigos de barra até sistemas de sensoriamento remoto.
+:::
+:::
+
+## **Cenário**
+::: {.nonincremental}
+Como analisar essa enorme quantidade de dados?
+
+::::{.columns style='display: flex !important; align-items: top;'}
+::: {.column width="30%"}
+![](figuras/jovem.png){fig-alt="Pensando" fig-align="center" width=50%}
+:::
+::: {.column width="70%"}
+![](figuras/big-data.png){fig-alt="Dados" fig-align="center" width=100%}
+:::
+::::
+:::
+
+## **SQL e Mineração de Dados**
+::: {.nonincremental}
+- [Bancos de dados]{.alert} relacionais são responsáveis por [armazenar]{.alert} e [recuperar]{.alert} dados de forma eficiente.
+- Esses [bancos de dados]{.alert} permitem a [extração]{.alert} de diversas [informações]{.alert} usando SQL.
+- Então [para que]{.alert} serve a [Mineração de Dados]{.alert}?
+:::
+::::{.columns style='display: flex !important; align-items: top;'}
+::: {.column width="30%"}
+![](figuras/pessoa_com_problema_metade.png){fig-alt="Pensando" fig-align="center" width=70%}
+:::
+::: {.column width="70%" .fragment .nonincremental}
+- Usando [SQL]{.alert}: esse processo resolve [questões]{.alert} que necessariamente devem ser [definidas]{.alert}.
+- [Mineração de Dados]{.alert}: a [descoberta]{.alert} de novas informações é [automática]{.alert}, ou seja, sem que seja necessária a formulação de uma questão.
+:::
+::::
+
+
+# **Mineração de Dados** {background-color="#0efb45ce" style="text-align: center;"}
+
+##
+::::{.columns style='display: flex !important; align-items: center;'}
+::: {.column width="30%"}
+![](figuras/dataMining.png){fig-alt="Data Mining" fig-align="center" width=100%}
+:::
+
+::: {.column width="70%"}
+**O que é Mineração de Dados?**
+
+É o [processo automático]{.alert} de [descoberta]{.alert} de novas [informações]{.alert} e [conhecimento]{.alert}, úteis a uma aplicação, no formato de [regras]{.alert} e [padrões]{.alert}, "escondidas" em grandes volumes de dados.
+
+:::{.fragment}
+**Onde ocorre?**
+
+Este processo é executado sobre [grandes quantidades de dados]{.alert}, estejam esses armazenados em [bancos de dados]{.alert} tradicionais, em [*data warehouses*]{.alert} ou em [outras formas de repositórios]{.alert}.
+:::
+:::
+::::
+
+## **Multidisciplinariedade**
+![](figuras/areas_correlatas.png){fig-alt="Multidisciplinariedade" fig-align="center" width=50%}
+
+## **Processo de Descoberta de Conhecimento em Bases de Dados**{style="text-align: center;"}
+![](figuras/processoKDD.png){fig-alt="Processo KDD" fig-align="center" width=100%}
+
+# **Tarefas e Técnicas em Mineração de Dados** {background-color="#0efb45ce" style="text-align: center;"}
+
+## **Tarefas *versus* Técnicas**
+::: {.increaselinespace}
+O processo de [mineração de dados]{.alert} envolve o uso de diversas [tarefas]{.alert} e [técnicas]{.alert}.
+
+- **Tarefas:** são [classes de problemas]{.alert}.
+- **Técnicas:** são os [algoritmos utilizados]{.alert} na resolução dos problemas propostos nas tarefas.
+:::
+
+## **Categorias de Tarefas**
+::: {style="line-height: 2.0;"}
+As [tarefas]{.alert} de mineração de dados podem ser divididas nas seguintes [categorias]{.alert}:
+
+:::{.fragment .nonincremental}
+::::{.columns style='display: flex !important; align-items: center;'}
+::: {.column width="30%"}
+![](figuras/tarefas_preditivas.png){fig-alt="Preditivas" fig-align="center" width=60%}
+:::
+
+::: {.column width="70%"}
+- **Tarefas Preditivas:** do [conhecimento adquirido]{.alert} a partir de um conjunto de dados, fazemos [predições]{.alert} para [novas instâncias]{.alert}.
+:::
+::::
+:::
+
+:::{.fragment .nonincremental}
+::::{.columns style='display: flex !important; align-items: center;'}
+::: {.column width="30%"}
+![](figuras/tarefas_descritivas.png){fig-alt="Descritivas" fig-align="center" width=100%}
+:::
+
+::: {.column width="70%"}
+- **Tarefas Descritivas:** buscam [identificar padrões]{.alert} de comportamento [comuns nos dados]{.alert}.
+:::
+::::
+:::
+:::
+
+## **Principais Tarefas de Mineração de Dados**
+![](figuras/tarefasMD.png){fig-alt="Tarefas" fig-align="center" width=100%}
+
+
+## **Mineração de Dados Direta**
+:::{.nonincremental .fontsize90}
+Através de uma [técnica de mineração]{.alert}, extrai-se ou [treina-se]{.alert} um [modelo]{.alert} que será posteriormente utilizado.
+
+- **Principais tarefas:** classificação e regressão.
+:::
+:::{.fragment .nonincremental .fontsize90}
+Mineração caracterizada pela existência de um campo específico (**atributo classe**) cujo valor deve ser estimado a partir dos valores dos demais atributos (**atributos preditores**).
+
+![](figuras/iris_dataset.png){fig-alt="Tarefas" fig-align="center" width=100%}
+:::
+
+
+## **Mineração de Dados Indireta**
+:::{.nonincremental style="line-height: 2.0;"}
+Através de uma [técnica de mineração]{.alert}, [extraem-se padrões]{.alert} significativos que serão posteriormente avaliados.
+
+- **Principais tarefas:** extração de regras de associação, agrupamento.
+
+O [resultado]{.alert} da mineração [complementa]{.alert} o [conhecimento do especialista]{.alert} e deverá ser examinado e avaliado por este.
+:::
+
+# **Extração de Regras de Associação** {background-color="#0efb45ce" style="text-align: center;"}
+
+## **Objetivo**
+Identificação de [itens]{.alert} de um mesmo [domínio de aplicação]{.alert} que ocorrem [juntos]{.alert} com determinada frequência na [base de dados]{.alert}.
+
+:::{.fragment .nonincremental}
+::::{.columns style='display: flex !important; align-items: center;'}
+::: {.column width="30%"}
+![](figuras/carrinho_compras.png){fig-alt="Carrinho" fig-align="center" width=70%}
+:::
+::: {.column width="70%"}
+**Exemplo:** *Market Basket Analysis* $\rightarrow$ identificação de produtos que são comprados juntos em um número significativo de transações de compras.
+:::
+::::
+:::
+
+
+## **Regras de Associação Booleanas**
+
+Uma [regra de associação]{.alert} representa um [padrão de relacionamento entre itens]{.alert} de dados do domínio da aplicação que [ocorre]{.alert} com uma determinada [frequência]{.alert} na base de dados (transacional).
+
+:::{.fragment .nonincremental}
+| Id-Transação (TID) | Itens Comprados |
+|:------------------:|:------------------------|
+| 1                  | leite, pão, refrigerante |
+| 2                  | cerveja, carne          |
+| 3                  | cerveja, fralda, leite, refrigerante |
+| 4                  | cerveja, fralda, leite, pão |
+| 5                  | fralda, leite, refrigerante |
+
+- **Exemplos de regras:** [{fralda} → {cerveja}, {fralda} → {leite}]{.fontsize90}
+:::
+
+
+## **Regras de Associação Quantitativas**
+
+São utilizadas quando se deseja [minerar]{.alert} padrões em [bases de dados relacionais]{.alert} (formadas por atributos quantitativos e atributos categóricos).
+
+![](figuras/base_relacional.png){fig-alt="Base Relacional" fig-align="center" width=60%}
+
+:::{.fragment .nonincremental}
+- **Exemplo:** <br>
+[(**Sexo** = "M") e (20 < **Idade** < 30) e (**Profissão** = "Advogado") → (**Compra** = "SIM")]{.fontsize90}
+
+   - Esta regra indica, com certo grau de certeza, que advogados, entre 20 e 30 anos, do sexo masculino são consumidores de *laptops*.
+:::
+
+
+# **Vamos Praticar!** {background-color="#e2fa02ce" style="text-align: center;"}
+![](figuras/programar.png){fig-alt="Base Relacional" fig-align="center" width=40%}
+
+<https://colab.research.google.com/drive/1RnS7z4_g1QrXTxdWaAhvqfw93DB8ea8g>
+
+
+# **Extração de Padrões de Sequência** {background-color="#0efb45ce" style="text-align: center;"}
+## **Definição**
+[Padrões de sequência]{.alert} representam [sequências de conjuntos de itens]{.alert} que ocorrem nas transações de [diferentes]{.alert} consumidores, com determinada frequência (na ordem especificada).
+
+:::{.fragment .nonincremental}
+![](figuras/base_pad_seq.png){fig-alt="Base" fig-align="center" width=100%}
+
+- **Exemplo:** {(leite) (queijo, manteiga)}
+:::
+
+# **Agrupamento** {background-color="#0efb45ce" style="text-align: center;"}
+
+## **Definição**
+:::{.fontsize90}
+[Agrupamento]{.alert} é o processo de [identificação]{.alert} de um [conjunto]{.alert} finito de categorias (ou [grupos]{.alert} - *clusters*), não previamente definidos, que contêm [objetos similares]{.alert}.
+
+:::{.fragment .nonincremental}
+- **Exemplo:** Deseja-se [separar os clientes]{.alert} em [grupos]{.alert} de forma que aqueles que apresentam o [mesmo comportamento]{.alert} de consumo fiquem no [mesmo grupo]{.alert}.
+
+::: {.columns style='display: flex !important; align-items: center;'}
+
+::: {.column width="40%"}
+Cada tupla deste exemplo indica a [quantidade total de produtos]{.alert} consumidos e o [preço médio]{.alert} destes produtos relativos a [cada consumidor]{.alert}.
+:::
+
+::: {.column width="60%" .fontsize80}
+| Consumidor | Qtd. Prods. | Preço Médio Prods. |
+|:----------:|:-----------:|:------------------:|
+| 1          | 2           | 1.700              |
+| 2          | 10          | 1.800              |
+| 3          | 2           | 100                |
+| 4          | 3           | 2.000              |
+| 5          | 12          | 2.100              |
+| 6          | 3           | 200                |
+| 7          | 4           | 2.300              |
+| 8          | 11          | 2.040              |
+| 9          | 3           | 150                |
+:::
+:::
+:::
+:::
+
+
+## **Resultado do Agrupamento**
+
+::: {.columns style='display: flex !important; align-items: center;'}
+
+::: {.column width="30%" .fontsize70 style="text-align: center;"}
+**Base de Dados**
+
+::: {style="text-align: center;"}
+| Cons. | Qtd. | \$ Méd. Prods. |
+|:-----:|:----:|:--------------:|
+| 1     | 2    | 1.700          |
+| 2     | 10   | 1.800          |
+| 3     | 2    | 100            |
+| 4     | 3    | 2.000          |
+| 5     | 12   | 2.100          |
+| 6     | 3    | 200            |
+| 7     | 4    | 2.300          |
+| 8     | 11   | 2.040          |
+| 9     | 3    | 150            |
+:::
+:::
+
+::: {.column width="70%" .fontsize65}
+:::{style="text-align: center;"}
+**Resultado do Agrupamento**
+:::
+
+::: {style="text-align: center;"}
+| Grupo | Cons. | Qtd. | \$ Méd. Prods. |
+|:-----:|:-----:|:----:|:--------------:|
+|       | 1     | 2    | 1.700          |
+| **1** | 4     | 3    | 2.000          |
+|       | 7     | 4    | 2.300          |
+|-------|-------|------|----------------|
+|       | 2     | 10   | 1.800          |
+| **2** | 5     | 12   | 2.100          |
+|       | 8     | 11   | 2.040          |
+|-------|-------|------|----------------|
+|       | 3     | 2    | 100            |
+| **3** | 6     | 3    | 200            |
+|       | 9     | 3    | 150            |
+:::
+[Cada grupo]{.alert} identificado é caracterizado por [consumidores semelhantes]{.alert} em relação à quantidade de produtos e ao preço médio dos mesmos.
+:::
+:::
+
+
+# **Vamos Praticar!** {background-color="#e2fa02ce" style="text-align: center;"}
+![](figuras/programar.png){fig-alt="Base Relacional" fig-align="center" width=40%}
+
+<https://colab.research.google.com/drive/1SIEWGPVc32xe4UGGzGuxK7E2gDs5vCe3>
+
+
+# **Classificação e Regressão** {background-color="#0efb45ce" style="text-align: center;"}
+
+## **Objetivo da Classificação**
+::: {.nonincremental style="line-height: 2.0;"}
+[Identificar a classe]{.alert} a qual um [elemento pertence]{.alert} a partir de suas características. O conjunto de possíveis classes é [discreto]{.alert} e [predefinido]{.alert}.
+
+- **Exemplo:** a partir das características de um indivíduo, determinar a que classe social ele pertence.
+  - Conjunto de classes = {A, B, C, D, E}.
+:::
+
+## **Treinamento de um Modelo de Classificação**
+
+::: {.columns}
+::: {.column width="55%"}
+
+::: {style="text-align: center;" .fontsize80}
+|  ID   | Salario | Idade | Tipo Emprego | Classe |
+|:-----:|:-------:|:-----:|:------------:|:------:|
+|   1   |  3.000  |  30   |  Autônomo    |   B    |
+|   2   |  4.000  |  35   |  Indústria   |   B    |
+|   3   |  7.000  |  50   |  Pesquisa    |   C    |
+|   4   |  6.000  |  45   |  Autônomo    |   C    |
+|   5   |  7.000  |  30   |  Pesquisa    |   B    |
+|   6   |  6.000  |  35   |  Indústria   |   B    |
+|   7   |  6.000  |  35   |  Autônomo    |   A    |
+|   8   |  7.000  |  30   |  Autônomo    |   A    |
+|   9   |  4.000  |  45   |  Indústria   |   B    |
+:::
+[A partir de uma [base de treinamento]{.alert}, extrai-se o modelo de classificação (p.ex., [árvore de decisão]{.alert}).]{.fontsize90}
+:::
+
+::: {.column width="45%"}
+:::{style="text-align: center;"}
+**Árvore de Decisão**
+:::
+![](figuras/arvore_decisao.png){fig-alt="Árvore Decisão" fig-align="center" width=80%}
+:::
+:::
+
+
+## **Processo de Avaliação de um Modelo de Classificação**{style="text-align: center;"}
+::: {style="display: flex; align-items: center; justify-content: center; height: 100%;"}
+![](figuras/processo_classificacao.png){fig-alt="Processo" fig-align="center" width=100%}
+:::
+
+## **Objetivo da Regressão**
+::: {.nonincremental style="line-height: 2.0;"}
+[Estimar]{.alert} o [valor]{.alert} de um [atributo]{.alert} de uma [instância]{.alert} a partir de suas características. O [domínio]{.alert} deste atributo deve ser [numérico]{.alert} e [contínuo]{.alert}. 
+
+- **Exemplo:** a partir das características de um imóvel, determinar seu valor de venda ou aluguel. 
+   
+   $Y=\alpha + a_1 x_1 + a_2 x_2 + \ldots + a_n x_n$.
+:::
+
+# **Vamos Praticar!** {background-color="#e2fa02ce" style="text-align: center;"}
+![](figuras/programar.png){fig-alt="Base Relacional" fig-align="center" width=40%}
+
+<https://colab.research.google.com/drive/1pqUDMwn3_pOm8Evjso6rk31P8oS0CupH>
+
+
+# **Aplicações e Softwares** {background-color="#0efb45ce" style="text-align: center;"}
+
+## **Aplicações**
+:::{.nonincremental}
+Analisar [tendências]{.alert} e encontrar [padrões]{.alert} a partir de [dados históricos]{.alert} com o objetivo de prever ações futuras e apoiar [decisões]{.alert} pode ser um procedimento [útil]{.alert} em [diversas áreas]{.alert}, tais como:
+
+- *Marketing*.
+- Finanças.
+- Saúde.
+- Educação.
+- Segurança.
+- Outras.
+:::
+
+
+## **Softwares de Mineração de Dados**
+
+- **Weka:** Desenvolvido em Java pela Universidade de Waikato, contém uma variedade de algoritmos de Data Mining (DM).
+- **Rapid Miner:** Desenvolvido pela empresa Rapid Miner, é uma ferramenta em Java que permite trabalhar com aprendizado profundo, mineração de texto e aprendizado de máquina.
+- **Oracle Data Mining:** Desenvolvido pela Oracle, permite interligação direta com o banco de dados Oracle.
+- **Orange:** Software desenvolvido em Python que fornece algoritmos de mineração de dados.
+- **IBM SPSS Modeler:** Software de mineração de dados utilizado para construção de modelos preditivos.
+- **Scikit-learn:** Software desenvolvido em Python que fornece um conjunto de algoritmos de mineração de dados.
+
+##
+::::{.columns style='display: flex !important; align-items: center;'}
+::: {.column width="55%"}
+![](figuras/contatos.png){fig-alt="Carrinho" fig-align="center" width=50%}
+
+:::{style="font-size: 85%;"}
+Prof. Luiz Henrique de Campos Merschmann<br>
+Departamento de Computação Aplicada<br>
+<luiz.hcm@ufla.br><br>
+<https://luiz.dac.ufla.br>
+
+:::
+:::
+
+::: {.column width="45%"}
+![](figuras/perguntas.png){fig-alt="Perguntas" fig-align="center" width=80%}
+:::
+::::
+
+
+
+

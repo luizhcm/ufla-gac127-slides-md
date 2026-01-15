@@ -1,0 +1,136 @@
+/*-- scss:defaults --*/
+
+$h1bgcolor: #f7fad1;
+
+/*-- scss:rules --*/
+
+.reveal .footer {
+    font-size: 0.60em !important;
+    text-align: center !important;
+}
+
+.underline {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.alert {
+    font-weight: bold;
+}
+
+.doublefontsize {
+    font-size: 200%;
+}
+
+.halfincfontsize {
+    font-size: 150%;
+}
+
+.fontsize95 {
+    font-size: 95%;
+}
+
+.fontsize90 {
+    font-size: 90%;
+}
+
+.fontsize85 {
+    font-size: 85%;
+}
+
+.fontsize80 {
+    font-size: 80%;
+}
+
+.fontsize70 {
+    font-size: 70%;
+}
+
+.fontsize75 {
+    font-size: 75%;
+}
+
+
+.fontsize60 {
+    font-size: 60%;
+}
+
+.fontsize65 {
+    font-size: 65%;
+}
+
+
+.fontsize50 {
+    font-size: 50%;
+}
+
+// Slide numbers to the bottom-left
+.slide-number, .reveal.has-logo .slide-number {
+    bottom: 14px !important;
+    left: 50px !important;
+    top: unset !important;
+}
+
+.reducelinespace70 {
+    line-height: 70% !important;
+}
+
+.reducelinespace90 {
+    line-height: 90% !important;
+}
+
+.increaselinespace {
+    line-height: 250%;
+}
+
+.fontcolorblue{
+    color: blue;
+}
+
+#title-slide .title {
+    color: #003366;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #title-slide .subtitle {
+    //color: #00FFFF;
+    text-align: center;
+  }
+  
+  #title-slide .quarto-title-author-name {
+    //color: #00FF00;
+    text-align: center;
+  }
+  
+  #title-slide .quarto-title-affiliation {
+    //color: #FFA500;
+    font-size: 90%;
+    text-align: center;
+}
+
+/* Remove horizontal lines from tables but keep vertical borders */
+.reveal table tbody tr {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.reveal table tbody tr td,
+.reveal table tbody tr th {
+    border-top: none !important;
+    border-bottom: none !important;
+    padding: 5px !important;
+}
+
+.reveal table thead th {
+    border-bottom: none !important;
+}
+
+/* Make separator lines solid (not dotted) */
+.reveal table tbody tr:has(td[style*="border-bottom"]) {
+    border-bottom: 1px solid black !important;
+}
+
+.reveal table tbody tr td[style*="border-bottom"] {
+    border-bottom: 1px solid black !important;
+}
