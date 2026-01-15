@@ -1,0 +1,30 @@
+ ---
+title: "Pré-processamento de Dados"
+subtitle: "<br><br>"
+title-slide-attributes:
+    data-background-size: contain
+    data-background-position-x: center
+    data-background-position-y: center
+---
+
+## **Conteúdo da Aula**  
+
+::::{.columns style='display: flex !important; height: 70%; align-items: center;'}
+
+::: {.column width="20%"}
+![](figuras/professor1-1.png){fig-alt="Professor1-1" fig-align="center"}
+:::
+
+::: {.column width="80%"}
+::: {.nonincremental}
+::: {style="font-size: 120%;"}
+- Limpeza de Dados
+- Integração de Dados
+- Transformação de Dados
+- Redução de Dados
+- Balanceamento de Dados
+:::
+:::
+:::
+
+:::: 

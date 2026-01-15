@@ -1,5 +1,5 @@
  ---
-title: "Mineração de Dados: Tarefas e Aplicações"
+title: "Introdução à Mineração de Dados"
 subtitle: "<br><br>"
 title-slide-attributes:
     data-background-size: contain
@@ -7,7 +7,7 @@ title-slide-attributes:
     data-background-position-y: center
 ---
 
-## **Conteúdo do Minicurso**  
+## **Conteúdo da Aula**  
 
 ::::{.columns style='display: flex !important; height: 70%; align-items: center;'}
 
