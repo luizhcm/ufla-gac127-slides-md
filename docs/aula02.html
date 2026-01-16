@@ -394,7 +394,8 @@
 </div>
 </section>
 <section id="formatos-de-dados" class="slide level2">
-<h2>Formatos de Dados</h2>
+<h2><strong>Formatos de Dados</strong></h2>
+<div style="font-size: 0.9em;">
 <p>Até pouco tempo atrás, técnicas de mineração de dados eram aplicadas apenas a conjunto de dados em um <span class="alert">formato estruturado</span>.</p>
 <ul>
 <li class="fragment">Dados representados por meio de uma matriz bidimensional <span class="math inline">\(n \times m\)</span>, onde <span class="math inline">\(n\)</span> é o número de linhas e <span class="math inline">\(m\)</span> é o número de colunas.
@@ -403,12 +404,14 @@
 <li class="fragment">Cada <strong>coluna</strong> representa uma característica do objeto no conjunto de dados: variável, <span class="alert">atributo</span>, campo etc.</li>
 </ul></li>
 </ul>
-<div class="columns fragment" style="display: flex !important; align-items: center; font-size: 0.7em;">
+</div>
+<div class="columns fragment" style="display: flex !important; font-size: 0.8em;">
 <div class="column" style="width:60%;">
+<div class="table-bordered" style="display: flex !important; font-size: 0.9em; ">
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Nome</th>
+<th style="text-align: left;">Nome</th>
 <th style="text-align: center;">Peso</th>
 <th style="text-align: center;">Pressão</th>
 <th style="text-align: center;">Temp</th>
@@ -416,33 +419,43 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Pedro</td>
+<td style="text-align: left;">Pedro</td>
 <td style="text-align: center;">78</td>
 <td style="text-align: center;">125</td>
 <td style="text-align: center;">39</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Tiago</td>
+<td style="text-align: left;">Tiago</td>
 <td style="text-align: center;">54</td>
 <td style="text-align: center;">120</td>
 <td style="text-align: center;">37</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Caio</td>
+<td style="text-align: left;">Caio</td>
 <td style="text-align: center;">87</td>
 <td style="text-align: center;">148</td>
 <td style="text-align: center;">38</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">Renan</td>
-<td style="text-align: center;">65</td>
-<td style="text-align: center;">137</td>
-<td style="text-align: center;">36</td>
-</tr>
 </tbody>
 </table>
-</div><div class="column" style="width:50%;">
-<p>Z</p>
+</div>
+</div><div class="column" style="width:40%;">
+<p>Conjunto de dados <span class="alert">estruturado</span> com <strong>3 instâncias</strong> e <strong>4 atributos</strong> (Nome, Peso, Pressão e Temp).</p>
+</div>
+</div>
+</section>
+<section id="formatos-de-dados-1" class="slide level2">
+<h2><strong>Formatos de Dados</strong></h2>
+<p>Apesar de grande parte das técnicas de mineração de dados funcionarem principalmente em conjuntos de dados estruturados, a maioria dos conjuntos de dados reais produzidos atualmente são <span class="alert">não estruturados</span>.</p>
+<div class="columns" style="height: 60%; display: flex !important; align-items: center;">
+<div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figuras/dados_nao_estruturados.png" class="quarto-figure quarto-figure-center" style="width:80.0%" alt="Data Mining"></p>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<p>Enquanto dados estruturados são mais fáceis de serem processados, os não estruturados são geralmente mais fáceis de serem analisados por humanos.</p>
 </div>
 </div>
 <div class="quarto-auto-generated-content">

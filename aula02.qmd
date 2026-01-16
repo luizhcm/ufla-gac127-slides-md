@@ -49,25 +49,44 @@ title-slide-attributes:
 :::
 ::::
 
-## Formatos de Dados
-
+## **Formatos de Dados**
+:::{style='font-size: 0.9em;'}
 Até pouco tempo atrás, técnicas de mineração de dados eram aplicadas apenas a conjunto de dados em um [formato estruturado]{.alert}.
 
 - Dados representados por meio de uma matriz bidimensional $n \times m$, onde $n$ é o número de linhas e $m$ é o número de colunas.
   - Cada **linha** representa um objeto do conjunto de dados: registro, [instância]{.alert}, exemplo etc.
   - Cada **coluna** representa uma característica do objeto no conjunto de dados: variável, [atributo]{.alert}, campo etc.
+:::
 
-::::{.columns style='display: flex !important; align-items: center; font-size: 0.7em;' .fragment}
+::::{.columns style='display: flex !important; font-size: 0.8em;' .fragment}
 ::: {.column width="60%"}
+
+::: {.table-bordered style='display: flex !important; font-size: 0.9em; '}
 | Nome     | Peso     | Pressão  | Temp     |
-|:--------:|:--------:|:--------:|:--------:|
+|:---------|:--------:|:--------:|:--------:|
 | Pedro    | 78       | 125      | 39       |
 | Tiago    | 54       | 120      | 37       |
 | Caio     | 87       | 148      | 38       |
-| Renan    | 65       | 137      | 36       |
-
 :::
-::: {.column width="50%"}
-Z
+:::
+
+::: {.column width="40%"}
+Conjunto de dados [estruturado]{.alert} com **3 instâncias** e **4 atributos** (Nome, Peso, Pressão e Temp).
 :::
 ::::
+
+
+## **Formatos de Dados**
+Apesar de grande parte das técnicas de mineração de dados funcionarem principalmente em conjuntos de dados estruturados, a maioria dos conjuntos de dados reais produzidos atualmente são [não estruturados]{.alert}.
+
+::::{.columns style='height: 60%; display: flex !important; align-items: center;'}
+::: {.column width="60%"}
+![](figuras/dados_nao_estruturados.png){fig-alt="Data Mining" fig-align="center" width=80%}
+
+:::
+::: {.column width="40%"}
+Enquanto dados estruturados são mais fáceis de serem processados, os não estruturados são geralmente mais fáceis de serem analisados por humanos.
+:::
+::::
+
+

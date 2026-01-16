@@ -110,7 +110,7 @@ $h1bgcolor: #f7fad1;
 }
 
 /* Remove horizontal lines from tables but keep vertical borders */
-/**
+
 .reveal table tbody tr {
     border-top: none !important;
     border-bottom: none !important;
@@ -126,8 +126,22 @@ $h1bgcolor: #f7fad1;
 .reveal table thead th {
     border-bottom: none !important;
 }
-**/
- 
+
+/* Add borders around the entire table and cells */
+.table-bordered table {
+  border-collapse: collapse;
+  border: 1px solid black;   /* garante a borda externa */
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid black;   /* garante as bordas internas */
+}
+
+
+.table-bordered thead {
+  box-shadow: inset 0 -1px 0 black;/* Linha separadora do cabeçalho */
+}
 
 /* Make separator lines solid (not dotted) */
 .reveal table tbody tr:has(td[style*="border-bottom"]) {
