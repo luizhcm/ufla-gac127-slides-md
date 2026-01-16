@@ -110,6 +110,7 @@ $h1bgcolor: #f7fad1;
 }
 
 /* Remove horizontal lines from tables but keep vertical borders */
+/**
 .reveal table tbody tr {
     border-top: none !important;
     border-bottom: none !important;
@@ -125,6 +126,8 @@ $h1bgcolor: #f7fad1;
 .reveal table thead th {
     border-bottom: none !important;
 }
+**/
+ 
 
 /* Make separator lines solid (not dotted) */
 .reveal table tbody tr:has(td[style*="border-bottom"]) {

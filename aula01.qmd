@@ -84,7 +84,7 @@ Como analisar essa enorme quantidade de dados?
 ::: {.column width="70%"}
 **O que é Mineração de Dados?**
 
-É o [processo automático]{.alert} de [descoberta]{.alert} de novas [informações]{.alert} e [conhecimento]{.alert}, úteis a uma aplicação, no formato de [regras]{.alert} e [padrões]{.alert}, "escondidas" em grandes volumes de dados.
+É o [processo automático]{.alert} de [descoberta]{.alert} de novas [informações]{.alert} e [conhecimento]{.alert}, úteis a uma aplicação, no formato de [regras]{.alert} e [padrões]{.alert}, "escondidas" em [grandes volumes de dados]{.alert}.
 
 :::{.fragment}
 **Onde ocorre?**

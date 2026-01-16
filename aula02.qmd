@@ -28,3 +28,46 @@ title-slide-attributes:
 :::
 
 :::: 
+
+
+# **Dados** {background-color="#0efb45ce" style="text-align: center;"}
+
+##
+::::{.columns style='height: 100%; display: flex !important; align-items: center;'}
+::: {.column width="40%"}
+![](figuras/dataMining.png){fig-alt="Data Mining" fig-align="center" width=100%}
+:::
+
+::: {.column width="60%"}
+::: {style="text-align: center; font-size: 1.3em;"}
+**O que é Mineração de Dados?**
+:::
+
+:::{style="text-align: justify;"}
+[É o **processo automático** de **descoberta** de novas **informações** e **conhecimento**, úteis a uma aplicação, no formato de regras e padrões, "escondidas" em [grandes volumes de dados]{.alert}.]{.fragment}
+:::
+:::
+::::
+
+## Formatos de Dados
+
+Até pouco tempo atrás, técnicas de mineração de dados eram aplicadas apenas a conjunto de dados em um [formato estruturado]{.alert}.
+
+- Dados representados por meio de uma matriz bidimensional $n \times m$, onde $n$ é o número de linhas e $m$ é o número de colunas.
+  - Cada **linha** representa um objeto do conjunto de dados: registro, [instância]{.alert}, exemplo etc.
+  - Cada **coluna** representa uma característica do objeto no conjunto de dados: variável, [atributo]{.alert}, campo etc.
+
+::::{.columns style='display: flex !important; align-items: center; font-size: 0.7em;' .fragment}
+::: {.column width="60%"}
+| Nome     | Peso     | Pressão  | Temp     |
+|:--------:|:--------:|:--------:|:--------:|
+| Pedro    | 78       | 125      | 39       |
+| Tiago    | 54       | 120      | 37       |
+| Caio     | 87       | 148      | 38       |
+| Renan    | 65       | 137      | 36       |
+
+:::
+::: {.column width="50%"}
+Z
+:::
+::::
