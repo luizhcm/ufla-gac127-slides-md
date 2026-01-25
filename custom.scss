@@ -151,3 +151,8 @@ $h1bgcolor: #f7fad1;
 .reveal table tbody tr td[style*="border-bottom"] {
     border-bottom: 1px solid black !important;
 }
+
+/* Center align table headers */
+.table-header-center thead th {
+  text-align: center;
+}

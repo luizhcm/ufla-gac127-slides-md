@@ -29,9 +29,6 @@ title-slide-attributes:
 
 :::: 
 
-
-# **Dados** {background-color="#0efb45ce" style="text-align: center;"}
-
 ##
 ::::{.columns style='height: 100%; display: flex !important; align-items: center;'}
 ::: {.column width="40%"}
@@ -48,6 +45,8 @@ title-slide-attributes:
 :::
 :::
 ::::
+
+# **Dados** {background-color="#0efb45ce" style="text-align: center;"}
 
 ## **Formatos de Dados**
 :::{style='font-size: 0.9em;'}
@@ -89,4 +88,72 @@ Enquanto dados estruturados são mais fáceis de serem processados, os não estr
 :::
 ::::
 
+## **Formatos de Dados**
+::::{style='height: 70%; align-items: center; display: flex !important;'}
+- Os formatos de dados não se resumem apenas a [estruturados]{.alert} e [não estruturados]{.alert}.
+- Existe um **outro formato** que fica entre esses dois: o [semi-estruturado]{.alert}.
+  - Apresentam **alguma estrutura** em **parte** dos dados.
+  - Exemplos: e-mails, arquivos XML.
+- Vale observar que grande parte das técnicas utilizadas para [análise de dados]{.alert} funcionam apenas para [dados estruturados]{.alert}.
+::::
 
+## **Dados Não Rotulados *versus* Dados Rotulados**
+::::{.columns style='height: 40%; align-items: center; display: flex !important; font-size: 0.8em;' .fragment}
+::: {.column width="50%"}
+
+::: {.table-bordered style='display: flex !important; font-size: 0.9em; '}
+| Nome     | Peso     | Pressão  | Temp     |
+|:---------|:--------:|:--------:|:--------:|
+| Pedro    | 78       | 125      | 39       |
+| Tiago    | 54       | 120      | 37       |
+| Caio     | 87       | 148      | 38       |
+:::
+:::
+
+::: {.column width="50%" .nonincremental}
+- Conjunto de dados **estruturado** [não rotulado]{.alert}. 
+- Cada um dos **4 atributos** é denominado [atributo descritivo]{.alert}.
+- Dados usados por [tarefas descritivas]{.alert}.
+:::
+::::
+
+::::{.columns style='height: 45%; align-items: center; display: flex !important; font-size: 0.8em;' .fragment}
+::: {.column width="50%"}
+
+::: {.table-bordered style='display: flex !important; font-size: 0.9em; '}
+| Nome     | Peso     | Pressão  | Temp     |  <span class="fontcolorblue">Diagnóstico</span>  |
+|:---------|:--------:|:--------:|:--------:|:-------------:|
+| Pedro    | 78       | 125      | 39       |   Doente      |
+| Tiago    | 54       | 120      | 37       |  Saudável     |
+| Caio     | 87       | 148      | 38       |   Doente      |
+:::
+:::
+
+::: {.column width="50%" .nonincremental}
+- Conjunto de dados **estruturado** [rotulado]{.alert}. 
+- Os **4 primeiros atributos** são denominados [atributos preditivos]{.alert}.
+- O **último atributo** (<span class="fontcolorblue">Diagnóstico</span>) é conhecido como rótulo, atributo alvo ou [atributo classe]{.alert}.
+- Dados usados por [tarefas preditivas]{.alert}.
+:::
+::::
+
+## **Tipos de Dados**
+:::{style='font-size: 0.7em;'}
+É importante conhecermos os **tipos de dados** porque eles [determinam]{.alert} quais [ferramentas e técnicas]{.alert} podem ser usadas para [analisar os dados]{.alert}.
+:::
+
+::: {.table-bordered .table-header-center style='display: flex !important; font-size: 0.55em; '}
+| Tipos de atributo   | Principais características | Subtipos   | Exemplos |
+|:------------------:|----------------------------|:----------:|----------|
+| **Numéricos <br>(quantitativos)** | Representam quantidades numéricas;<br> permitem operações matemáticas (soma,<br> média, desvio padrão etc.); usados em<br> cálculos estatísticos e métricas de distância | **Contínuos** | Altura (1,72 m), temperatura (36,5 °C), peso (70,3 kg) |
+|                  |                            | **Discretos** | Número de filhos (2), quantidade de compras (5), número de acessos (10) |
+| **Categóricos <br>(qualitativos)** | Representam categorias ou rótulos; não<br> permitem operações aritméticas; análise<br> baseada em igualdade/diferença<br> e >, < (para ordinais) | **Nominais** | Cor dos olhos (azul, verde), sexo (M, F), país (Brasil, Chile) |
+|                  |                            | **Ordinais** | Nível de satisfação (baixo, médio, alto), escolaridade (fundamental, médio, superior) |
+:::
+
+# **Processo de Descoberta de Conhecimento em Bases de Dados** {background-color="#0efb45ce" style="text-align: center;"}
+## 
+![](figuras/processoKDD.png){fig-alt="Processo KDD" fig-align="center" width=100%}
+
+## **Etapas do Processo**
+Ver livro de Ciência de Dados

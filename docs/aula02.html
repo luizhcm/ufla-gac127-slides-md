@@ -369,11 +369,6 @@
 </div>
 </div>
 </section>
-<section>
-<section id="dados" class="title-slide slide level1 center" data-background-color="#0efb45ce" style="text-align: center;">
-<h1><strong>Dados</strong></h1>
-
-</section>
 <section id="section" class="slide level2">
 <h2></h2>
 <div class="columns" style="height: 100%; display: flex !important; align-items: center;">
@@ -392,6 +387,11 @@
 </div>
 </div>
 </div>
+</section>
+<section>
+<section id="dados" class="title-slide slide level1 center" data-background-color="#0efb45ce" style="text-align: center;">
+<h1><strong>Dados</strong></h1>
+
 </section>
 <section id="formatos-de-dados" class="slide level2">
 <h2><strong>Formatos de Dados</strong></h2>
@@ -458,6 +458,186 @@
 <p>Enquanto dados estruturados são mais fáceis de serem processados, os não estruturados são geralmente mais fáceis de serem analisados por humanos.</p>
 </div>
 </div>
+</section>
+<section id="formatos-de-dados-2" class="slide level2">
+<h2><strong>Formatos de Dados</strong></h2>
+<div style="height: 70%; align-items: center; display: flex !important;">
+<ul>
+<li class="fragment">Os formatos de dados não se resumem apenas a <span class="alert">estruturados</span> e <span class="alert">não estruturados</span>.</li>
+<li class="fragment">Existe um <strong>outro formato</strong> que fica entre esses dois: o <span class="alert">semi-estruturado</span>.
+<ul>
+<li class="fragment">Apresentam <strong>alguma estrutura</strong> em <strong>parte</strong> dos dados.</li>
+<li class="fragment">Exemplos: e-mails, arquivos XML.</li>
+</ul></li>
+<li class="fragment">Vale observar que grande parte das técnicas utilizadas para <span class="alert">análise de dados</span> funcionam apenas para <span class="alert">dados estruturados</span>.</li>
+</ul>
+</div>
+</section>
+<section id="dados-não-rotulados-versus-dados-rotulados" class="slide level2">
+<h2><strong>Dados Não Rotulados <em>versus</em> Dados Rotulados</strong></h2>
+<div class="columns fragment" style="height: 40%; align-items: center; display: flex !important; font-size: 0.8em;">
+<div class="column" style="width:50%;">
+<div class="table-bordered" style="display: flex !important; font-size: 0.9em; ">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Nome</th>
+<th style="text-align: center;">Peso</th>
+<th style="text-align: center;">Pressão</th>
+<th style="text-align: center;">Temp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Pedro</td>
+<td style="text-align: center;">78</td>
+<td style="text-align: center;">125</td>
+<td style="text-align: center;">39</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tiago</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">37</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Caio</td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">148</td>
+<td style="text-align: center;">38</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Conjunto de dados <strong>estruturado</strong> <span class="alert">não rotulado</span>.</li>
+<li>Cada um dos <strong>4 atributos</strong> é denominado <span class="alert">atributo descritivo</span>.</li>
+<li>Dados usados por <span class="alert">tarefas descritivas</span>.</li>
+</ul>
+</div>
+</div>
+<div class="columns fragment" style="height: 45%; align-items: center; display: flex !important; font-size: 0.8em;">
+<div class="column" style="width:50%;">
+<div class="table-bordered" style="display: flex !important; font-size: 0.9em; ">
+<table>
+<colgroup>
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Nome</th>
+<th style="text-align: center;">Peso</th>
+<th style="text-align: center;">Pressão</th>
+<th style="text-align: center;">Temp</th>
+<th style="text-align: center;"><span class="fontcolorblue">Diagnóstico</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Pedro</td>
+<td style="text-align: center;">78</td>
+<td style="text-align: center;">125</td>
+<td style="text-align: center;">39</td>
+<td style="text-align: center;">Doente</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tiago</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">Saudável</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Caio</td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">148</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: center;">Doente</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Conjunto de dados <strong>estruturado</strong> <span class="alert">rotulado</span>.</li>
+<li>Os <strong>4 primeiros atributos</strong> são denominados <span class="alert">atributos preditivos</span>.</li>
+<li>O <strong>último atributo</strong> (<span class="fontcolorblue">Diagnóstico</span>) é conhecido como rótulo, atributo alvo ou <span class="alert">atributo classe</span>.</li>
+<li>Dados usados por <span class="alert">tarefas preditivas</span>.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="tipos-de-dados" class="slide level2">
+<h2><strong>Tipos de Dados</strong></h2>
+<div style="font-size: 0.7em;">
+<p>É importante conhecermos os <strong>tipos de dados</strong> porque eles <span class="alert">determinam</span> quais <span class="alert">ferramentas e técnicas</span> podem ser usadas para <span class="alert">analisar os dados</span>.</p>
+</div>
+<div class="table-bordered table-header-center" style="display: flex !important; font-size: 0.55em; ">
+<table>
+<colgroup>
+<col style="width: 28%">
+<col style="width: 40%">
+<col style="width: 17%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Tipos de atributo</th>
+<th>Principais características</th>
+<th style="text-align: center;">Subtipos</th>
+<th>Exemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Numéricos <br>(quantitativos)</strong></td>
+<td>Representam quantidades numéricas;<br> permitem operações matemáticas (soma,<br> média, desvio padrão etc.); usados em<br> cálculos estatísticos e métricas de distância</td>
+<td style="text-align: center;"><strong>Contínuos</strong></td>
+<td>Altura (1,72 m), temperatura (36,5 °C), peso (70,3 kg)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"><strong>Discretos</strong></td>
+<td>Número de filhos (2), quantidade de compras (5), número de acessos (10)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Categóricos <br>(qualitativos)</strong></td>
+<td>Representam categorias ou rótulos; não<br> permitem operações aritméticas; análise<br> baseada em igualdade/diferença<br> e &gt;, &lt; (para ordinais)</td>
+<td style="text-align: center;"><strong>Nominais</strong></td>
+<td>Cor dos olhos (azul, verde), sexo (M, F), país (Brasil, Chile)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"><strong>Ordinais</strong></td>
+<td>Nível de satisfação (baixo, médio, alto), escolaridade (fundamental, médio, superior)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section></section>
+<section>
+<section id="processo-de-descoberta-de-conhecimento-em-bases-de-dados" class="title-slide slide level1 center" data-background-color="#0efb45ce" style="text-align: center;">
+<h1><strong>Processo de Descoberta de Conhecimento em Bases de Dados</strong></h1>
+
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figuras/processoKDD.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Processo KDD"></p>
+</figure>
+</div>
+</section>
+<section id="etapas-do-processo" class="slide level2">
+<h2><strong>Etapas do Processo</strong></h2>
+<p>Ver livro de Ciência de Dados</p>
 <div class="quarto-auto-generated-content">
 <p><img src="figuras/logoUFLA.png" class="slide-logo"></p>
 <div class="footer footer-default">

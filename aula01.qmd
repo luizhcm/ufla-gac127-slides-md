@@ -97,8 +97,6 @@ Este processo é executado sobre [grandes quantidades de dados]{.alert}, estejam
 ## **Multidisciplinariedade**
 ![](figuras/areas_correlatas.png){fig-alt="Multidisciplinariedade" fig-align="center" width=50%}
 
-## **Processo de Descoberta de Conhecimento em Bases de Dados**{style="text-align: center;"}
-![](figuras/processoKDD.png){fig-alt="Processo KDD" fig-align="center" width=100%}
 
 # **Tarefas e Técnicas em Mineração de Dados** {background-color="#0efb45ce" style="text-align: center;"}
 
